@@ -25,11 +25,19 @@ public class DogManager : MonoBehaviour
         DogB.type = "輻射變種狗";
         DogB.sex = "不明";
         DogB.color = "嘔吐色";
+        DogB.age = 1999565;
 
         Debug.Log(DogA.name + "品種:" + DogA.type + "顏色:" + DogA.color);
         Debug.Log(DogB.name + "品種:" + DogB.type + "顏色:" + DogB.color);
 
-        
+        DogA.Bark();
+        DogB.Bark();
+
+        Debug.Log(DogA.name + "的實際年齡為:" + DogA.ConvertAge ()+ "歲");
+        Debug.Log(DogB.name + "的實際年齡為:" + DogB.ConvertAge() + "歲");
+
+        DogA.Eat("熱狗");
+        DogB.Eat("嘔吐物", 300);
 
     }
     #endregion 

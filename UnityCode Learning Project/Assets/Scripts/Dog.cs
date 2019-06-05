@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+[System.Serializable]
+
 public class Dog
 {
     #region 欄位
